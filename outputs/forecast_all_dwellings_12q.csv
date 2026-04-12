@@ -1,0 +1,193 @@
+Period_dt,Region,Segment,yhat
+2026-01-01,East Midlands,All dwellings,277984.6437590177
+2026-04-01,East Midlands,All dwellings,280859.10972701205
+2026-07-01,East Midlands,All dwellings,281355.35897372896
+2026-10-01,East Midlands,All dwellings,276277.14640214975
+2027-01-01,East Midlands,All dwellings,273114.34414923145
+2027-04-01,East Midlands,All dwellings,275091.22105366935
+2027-07-01,East Midlands,All dwellings,275230.0958354168
+2027-10-01,East Midlands,All dwellings,275868.93113230856
+2028-01-01,East Midlands,All dwellings,272403.4218307716
+2028-04-01,East Midlands,All dwellings,276316.6208380819
+2028-07-01,East Midlands,All dwellings,280030.09873958473
+2028-10-01,East Midlands,All dwellings,276452.20916588325
+2026-01-01,East of England,All dwellings,390366.78948757006
+2026-04-01,East of England,All dwellings,411389.308523231
+2026-07-01,East of England,All dwellings,411327.57368350204
+2026-10-01,East of England,All dwellings,390857.56002956996
+2027-01-01,East of England,All dwellings,387072.6614860146
+2027-04-01,East of England,All dwellings,359605.7886260752
+2027-07-01,East of England,All dwellings,368129.1535733421
+2027-10-01,East of England,All dwellings,362014.79583397723
+2028-01-01,East of England,All dwellings,363508.94986721233
+2028-04-01,East of England,All dwellings,366382.3974360043
+2028-07-01,East of England,All dwellings,369458.01848667295
+2028-10-01,East of England,All dwellings,362941.1456390141
+2026-01-01,England,All dwellings,351200.2306993453
+2026-04-01,England,All dwellings,362517.75016320625
+2026-07-01,England,All dwellings,374622.977255651
+2026-10-01,England,All dwellings,365015.6312712804
+2027-01-01,England,All dwellings,366845.4979003003
+2027-04-01,England,All dwellings,369011.5834479672
+2027-07-01,England,All dwellings,382819.35083992017
+2027-10-01,England,All dwellings,392508.3671414381
+2028-01-01,England,All dwellings,408945.9901028673
+2028-04-01,England,All dwellings,411006.8840744592
+2028-07-01,England,All dwellings,396959.20668188937
+2028-10-01,England,All dwellings,384193.4166399105
+2026-01-01,England and Wales,All dwellings,342008.89412929805
+2026-04-01,England and Wales,All dwellings,355017.110566444
+2026-07-01,England and Wales,All dwellings,365911.4561473328
+2026-10-01,England and Wales,All dwellings,368313.8286578203
+2027-01-01,England and Wales,All dwellings,362146.78488665674
+2027-04-01,England and Wales,All dwellings,366129.4223874127
+2027-07-01,England and Wales,All dwellings,369538.2133688782
+2027-10-01,England and Wales,All dwellings,362630.6233720911
+2028-01-01,England and Wales,All dwellings,363618.5072871842
+2028-04-01,England and Wales,All dwellings,367147.2928006921
+2028-07-01,England and Wales,All dwellings,369458.01848667295
+2028-10-01,England and Wales,All dwellings,362941.1456390141
+2026-01-01,Great Britain,All dwellings,329736.6502281841
+2026-04-01,Great Britain,All dwellings,344281.6941878245
+2026-07-01,Great Britain,All dwellings,346574.4475619866
+2026-10-01,Great Britain,All dwellings,343189.46636907855
+2027-01-01,Great Britain,All dwellings,349179.1758744925
+2027-04-01,Great Britain,All dwellings,348628.79642359144
+2027-07-01,Great Britain,All dwellings,357677.864788724
+2027-10-01,Great Britain,All dwellings,363685.6542573998
+2028-01-01,Great Britain,All dwellings,362674.626977752
+2028-04-01,Great Britain,All dwellings,366708.22436127276
+2028-07-01,Great Britain,All dwellings,372688.158633425
+2028-10-01,Great Britain,All dwellings,365983.7376545463
+2026-01-01,London,All dwellings,572562.5559194991
+2026-04-01,London,All dwellings,520973.35315093107
+2026-07-01,London,All dwellings,520973.35315093107
+2026-10-01,London,All dwellings,520973.35315093107
+2027-01-01,London,All dwellings,520973.35315093107
+2027-04-01,London,All dwellings,565721.068308084
+2027-07-01,London,All dwellings,569835.5471695755
+2027-10-01,London,All dwellings,568706.578784866
+2028-01-01,London,All dwellings,569835.5471695755
+2028-04-01,London,All dwellings,565721.068308084
+2028-07-01,London,All dwellings,565721.068308084
+2028-10-01,London,All dwellings,565721.068308084
+2026-01-01,North East,All dwellings,221839.98862166685
+2026-04-01,North East,All dwellings,225275.34469923066
+2026-07-01,North East,All dwellings,234685.810564819
+2026-10-01,North East,All dwellings,236936.83023098047
+2027-01-01,North East,All dwellings,236542.75489531018
+2027-04-01,North East,All dwellings,239893.6494888464
+2027-07-01,North East,All dwellings,246712.28986109857
+2027-10-01,North East,All dwellings,247861.9634316143
+2028-01-01,North East,All dwellings,242186.57225208174
+2028-04-01,North East,All dwellings,243990.22290535487
+2028-07-01,North East,All dwellings,246207.44143633405
+2028-10-01,North East,All dwellings,246576.9003317983
+2026-01-01,North West,All dwellings,267319.6432968322
+2026-04-01,North West,All dwellings,278142.75342808315
+2026-07-01,North West,All dwellings,281453.3663809504
+2026-10-01,North West,All dwellings,274579.4549964889
+2027-01-01,North West,All dwellings,268943.80971230124
+2027-04-01,North West,All dwellings,271380.81702358136
+2027-07-01,North West,All dwellings,276187.139117028
+2027-10-01,North West,All dwellings,274613.3574442492
+2028-01-01,North West,All dwellings,268049.7387770626
+2028-04-01,North West,All dwellings,272492.0556812626
+2028-07-01,North West,All dwellings,276317.12885832327
+2028-10-01,North West,All dwellings,274613.3574442492
+2026-01-01,Northern Ireland,All dwellings,233516.44795281687
+2026-04-01,Northern Ireland,All dwellings,238176.65968748077
+2026-07-01,Northern Ireland,All dwellings,245860.8655115519
+2026-10-01,Northern Ireland,All dwellings,247861.9634316143
+2027-01-01,Northern Ireland,All dwellings,241676.15513003725
+2027-04-01,Northern Ireland,All dwellings,243155.64674129005
+2027-07-01,Northern Ireland,All dwellings,246161.35689636657
+2027-10-01,Northern Ireland,All dwellings,246576.9003317983
+2028-01-01,Northern Ireland,All dwellings,239377.2252201889
+2028-04-01,Northern Ireland,All dwellings,241131.05113875843
+2028-07-01,Northern Ireland,All dwellings,242592.00031749884
+2028-10-01,Northern Ireland,All dwellings,244408.1687816363
+2026-01-01,Scotland,All dwellings,241715.68496373587
+2026-04-01,Scotland,All dwellings,242971.43147806637
+2026-07-01,Scotland,All dwellings,243921.3983037282
+2026-10-01,Scotland,All dwellings,245147.33962481256
+2027-01-01,Scotland,All dwellings,239928.1139785375
+2027-04-01,Scotland,All dwellings,240865.25259131417
+2027-07-01,Scotland,All dwellings,243465.2756526068
+2027-10-01,Scotland,All dwellings,243764.5621329366
+2028-01-01,Scotland,All dwellings,236988.41442968
+2028-04-01,Scotland,All dwellings,240887.7799423055
+2028-07-01,Scotland,All dwellings,243019.10596438285
+2028-10-01,Scotland,All dwellings,241861.6868814281
+2026-01-01,South East,All dwellings,565721.068308084
+2026-04-01,South East,All dwellings,514035.0231946259
+2026-07-01,South East,All dwellings,569835.5471695755
+2026-10-01,South East,All dwellings,568706.578784866
+2027-01-01,South East,All dwellings,565721.068308084
+2027-04-01,South East,All dwellings,569835.5471695755
+2027-07-01,South East,All dwellings,565721.068308084
+2027-10-01,South East,All dwellings,565721.068308084
+2028-01-01,South East,All dwellings,565721.068308084
+2028-04-01,South East,All dwellings,565721.068308084
+2028-07-01,South East,All dwellings,565721.068308084
+2028-10-01,South East,All dwellings,565721.068308084
+2026-01-01,South West,All dwellings,338365.40165132127
+2026-04-01,South West,All dwellings,355485.66930104484
+2026-07-01,South West,All dwellings,362582.5210908488
+2026-10-01,South West,All dwellings,360636.53784837003
+2027-01-01,South West,All dwellings,362146.78488665674
+2027-04-01,South West,All dwellings,366129.4223874127
+2027-07-01,South West,All dwellings,370835.26197822334
+2027-10-01,South West,All dwellings,366233.27113945025
+2028-01-01,South West,All dwellings,364915.55589652935
+2028-04-01,South West,All dwellings,367714.534838622
+2028-07-01,South West,All dwellings,367586.11137564154
+2028-10-01,South West,All dwellings,362630.6233720911
+2026-01-01,United Kingdom,All dwellings,329253.0739260942
+2026-04-01,United Kingdom,All dwellings,343104.1591208902
+2026-07-01,United Kingdom,All dwellings,345237.26127538603
+2026-10-01,United Kingdom,All dwellings,343137.75109764806
+2027-01-01,United Kingdom,All dwellings,349302.152633674
+2027-04-01,United Kingdom,All dwellings,348431.06639194844
+2027-07-01,United Kingdom,All dwellings,357258.8369261197
+2027-10-01,United Kingdom,All dwellings,362476.8113713348
+2028-01-01,United Kingdom,All dwellings,362283.6177985721
+2028-04-01,United Kingdom,All dwellings,366708.22436127276
+2028-07-01,United Kingdom,All dwellings,372937.692118329
+2028-10-01,United Kingdom,All dwellings,366233.27113945025
+2026-01-01,Wales,All dwellings,246429.9236219711
+2026-04-01,Wales,All dwellings,247412.66995291007
+2026-07-01,Wales,All dwellings,248768.15974972132
+2026-10-01,Wales,All dwellings,247344.66414132735
+2027-01-01,Wales,All dwellings,240622.40286304447
+2027-04-01,Wales,All dwellings,241960.96481131707
+2027-07-01,Wales,All dwellings,243080.9951553637
+2027-10-01,Wales,All dwellings,244408.1687816363
+2028-01-01,Wales,All dwellings,239067.6117694633
+2028-04-01,Wales,All dwellings,240698.72748342282
+2028-07-01,Wales,All dwellings,242434.58395066575
+2028-10-01,Wales,All dwellings,242045.83080357738
+2026-01-01,West Midlands,All dwellings,332142.08491449826
+2026-04-01,West Midlands,All dwellings,343333.6649026153
+2026-07-01,West Midlands,All dwellings,357118.9922957629
+2026-10-01,West Midlands,All dwellings,348593.5111271285
+2027-01-01,West Midlands,All dwellings,348727.76590955566
+2027-04-01,West Midlands,All dwellings,358788.6722307215
+2027-07-01,West Midlands,All dwellings,373715.49920231436
+2027-10-01,West Midlands,All dwellings,360106.82530941686
+2028-01-01,West Midlands,All dwellings,364109.86029234465
+2028-04-01,West Midlands,All dwellings,366226.1422080796
+2028-07-01,West Midlands,All dwellings,348980.195014402
+2028-10-01,West Midlands,All dwellings,339257.31902380404
+2026-01-01,Yorkshire and the Humber,All dwellings,253446.17141652308
+2026-04-01,Yorkshire and the Humber,All dwellings,252289.7721502413
+2026-07-01,Yorkshire and the Humber,All dwellings,261845.69018033126
+2026-10-01,Yorkshire and the Humber,All dwellings,270251.23266419925
+2027-01-01,Yorkshire and the Humber,All dwellings,271532.2582823518
+2027-04-01,Yorkshire and the Humber,All dwellings,278229.85236057785
+2027-07-01,Yorkshire and the Humber,All dwellings,280994.0384863738
+2027-10-01,Yorkshire and the Humber,All dwellings,276166.77673330583
+2028-01-01,Yorkshire and the Humber,All dwellings,267990.4746078255
+2028-04-01,Yorkshire and the Humber,All dwellings,274799.8638188996
+2028-07-01,Yorkshire and the Humber,All dwellings,275315.6065452069
+2028-10-01,Yorkshire and the Humber,All dwellings,273942.38400784845

@@ -1,0 +1,321 @@
+Period_dt,Period,Region,Region code,Price,Segment
+2021-01-01,2021 Q1,East Midlands,E12000004,272965,All dwellings
+2021-04-01,2021 Q2,East Midlands,E12000004,266223,All dwellings
+2021-07-01,2021 Q3,East Midlands,E12000004,241978,All dwellings
+2021-10-01,2021 Q4,East Midlands,E12000004,251920,All dwellings
+2022-01-01,2022 Q1,East Midlands,E12000004,258596,All dwellings
+2022-04-01,2022 Q2,East Midlands,E12000004,268248,All dwellings
+2022-07-01,2022 Q3,East Midlands,E12000004,278444,All dwellings
+2022-10-01,2022 Q4,East Midlands,E12000004,279561,All dwellings
+2023-01-01,2023 Q1,East Midlands,E12000004,262504,All dwellings
+2023-04-01,2023 Q2,East Midlands,E12000004,268689,All dwellings
+2023-07-01,2023 Q3,East Midlands,E12000004,273288,All dwellings
+2023-10-01,2023 Q4,East Midlands,E12000004,264796,All dwellings
+2024-01-01,2024 Q1,East Midlands,E12000004,259857,All dwellings
+2024-04-01,2024 Q2,East Midlands,E12000004,267088,All dwellings
+2024-07-01,2024 Q3,East Midlands,E12000004,275560,All dwellings
+2024-10-01,2024 Q4,East Midlands,E12000004,278407,All dwellings
+2025-01-01,2025 Q1,East Midlands,E12000004,281630,All dwellings
+2025-04-01,2025 Q2,East Midlands,E12000004,265856,All dwellings
+2025-07-01,2025 Q3,East Midlands,E12000004,278934,All dwellings
+2025-10-01,2025 Q4,East Midlands,E12000004,283889,All dwellings
+2021-01-01,2021 Q1,East of England,E12000006,395293,All dwellings
+2021-04-01,2021 Q2,East of England,E12000006,392121,All dwellings
+2021-07-01,2021 Q3,East of England,E12000006,348200,All dwellings
+2021-10-01,2021 Q4,East of England,E12000006,376288,All dwellings
+2022-01-01,2022 Q1,East of England,E12000006,386108,All dwellings
+2022-04-01,2022 Q2,East of England,E12000006,393090,All dwellings
+2022-07-01,2022 Q3,East of England,E12000006,409984,All dwellings
+2022-10-01,2022 Q4,East of England,E12000006,403475,All dwellings
+2023-01-01,2023 Q1,East of England,E12000006,387936,All dwellings
+2023-04-01,2023 Q2,East of England,E12000006,385869,All dwellings
+2023-07-01,2023 Q3,East of England,E12000006,397174,All dwellings
+2023-10-01,2023 Q4,East of England,E12000006,381200,All dwellings
+2024-01-01,2024 Q1,East of England,E12000006,371777,All dwellings
+2024-04-01,2024 Q2,East of England,E12000006,379965,All dwellings
+2024-07-01,2024 Q3,East of England,E12000006,395309,All dwellings
+2024-10-01,2024 Q4,East of England,E12000006,393810,All dwellings
+2025-01-01,2025 Q1,East of England,E12000006,400368,All dwellings
+2025-04-01,2025 Q2,East of England,E12000006,371154,All dwellings
+2025-07-01,2025 Q3,East of England,E12000006,400435,All dwellings
+2025-10-01,2025 Q4,East of England,E12000006,398559,All dwellings
+2021-01-01,2021 Q1,England,E92000001,364031,All dwellings
+2021-04-01,2021 Q2,England,E92000001,361983,All dwellings
+2021-07-01,2021 Q3,England,E92000001,310666,All dwellings
+2021-10-01,2021 Q4,England,E92000001,330471,All dwellings
+2022-01-01,2022 Q1,England,E92000001,349244,All dwellings
+2022-04-01,2022 Q2,England,E92000001,356226,All dwellings
+2022-07-01,2022 Q3,England,E92000001,374920,All dwellings
+2022-10-01,2022 Q4,England,E92000001,360984,All dwellings
+2023-01-01,2023 Q1,England,E92000001,345409,All dwellings
+2023-04-01,2023 Q2,England,E92000001,347688,All dwellings
+2023-07-01,2023 Q3,England,E92000001,363095,All dwellings
+2023-10-01,2023 Q4,England,E92000001,344140,All dwellings
+2024-01-01,2024 Q1,England,E92000001,340763,All dwellings
+2024-04-01,2024 Q2,England,E92000001,347748,All dwellings
+2024-07-01,2024 Q3,England,E92000001,364887,All dwellings
+2024-10-01,2024 Q4,England,E92000001,356029,All dwellings
+2025-01-01,2025 Q1,England,E92000001,367890,All dwellings
+2025-04-01,2025 Q2,England,E92000001,333900,All dwellings
+2025-07-01,2025 Q3,England,E92000001,363840,All dwellings
+2025-10-01,2025 Q4,England,E92000001,359439,All dwellings
+2021-01-01,2021 Q1,England and Wales,K04000001,349006,All dwellings
+2021-04-01,2021 Q2,England and Wales,K04000001,346437,All dwellings
+2021-07-01,2021 Q3,England and Wales,K04000001,298926,All dwellings
+2021-10-01,2021 Q4,England and Wales,K04000001,314927,All dwellings
+2022-01-01,2022 Q1,England and Wales,K04000001,333810,All dwellings
+2022-04-01,2022 Q2,England and Wales,K04000001,339333,All dwellings
+2022-07-01,2022 Q3,England and Wales,K04000001,357365,All dwellings
+2022-10-01,2022 Q4,England and Wales,K04000001,346302,All dwellings
+2023-01-01,2023 Q1,England and Wales,K04000001,330858,All dwellings
+2023-04-01,2023 Q2,England and Wales,K04000001,330140,All dwellings
+2023-07-01,2023 Q3,England and Wales,K04000001,345237,All dwellings
+2023-10-01,2023 Q4,England and Wales,K04000001,328750,All dwellings
+2024-01-01,2024 Q1,England and Wales,K04000001,335220,All dwellings
+2024-04-01,2024 Q2,England and Wales,K04000001,342164,All dwellings
+2024-07-01,2024 Q3,England and Wales,K04000001,358727,All dwellings
+2024-10-01,2024 Q4,England and Wales,K04000001,350343,All dwellings
+2025-01-01,2025 Q1,England and Wales,K04000001,363177,All dwellings
+2025-04-01,2025 Q2,England and Wales,K04000001,328396,All dwellings
+2025-07-01,2025 Q3,England and Wales,K04000001,358127,All dwellings
+2025-10-01,2025 Q4,England and Wales,K04000001,353982,All dwellings
+2021-01-01,2021 Q1,Great Britain,K03000001,349006,All dwellings
+2021-04-01,2021 Q2,Great Britain,K03000001,346437,All dwellings
+2021-07-01,2021 Q3,Great Britain,K03000001,298926,All dwellings
+2021-10-01,2021 Q4,Great Britain,K03000001,314927,All dwellings
+2022-01-01,2022 Q1,Great Britain,K03000001,333810,All dwellings
+2022-04-01,2022 Q2,Great Britain,K03000001,339333,All dwellings
+2022-07-01,2022 Q3,Great Britain,K03000001,357365,All dwellings
+2022-10-01,2022 Q4,Great Britain,K03000001,346302,All dwellings
+2023-01-01,2023 Q1,Great Britain,K03000001,330858,All dwellings
+2023-04-01,2023 Q2,Great Britain,K03000001,330140,All dwellings
+2023-07-01,2023 Q3,Great Britain,K03000001,345237,All dwellings
+2023-10-01,2023 Q4,Great Britain,K03000001,328750,All dwellings
+2024-01-01,2024 Q1,Great Britain,K03000001,325291,All dwellings
+2024-04-01,2024 Q2,Great Britain,K03000001,330497,All dwellings
+2024-07-01,2024 Q3,Great Britain,K03000001,346964,All dwellings
+2024-10-01,2024 Q4,Great Britain,K03000001,340616,All dwellings
+2025-01-01,2025 Q1,Great Britain,K03000001,355079,All dwellings
+2025-04-01,2025 Q2,Great Britain,K03000001,317675,All dwellings
+2025-07-01,2025 Q3,Great Britain,K03000001,347616,All dwellings
+2025-10-01,2025 Q4,Great Britain,K03000001,344788,All dwellings
+2021-01-01,2021 Q1,London,E12000007,593618,All dwellings
+2021-04-01,2021 Q2,London,E12000007,604421,All dwellings
+2021-07-01,2021 Q3,London,E12000007,608988,All dwellings
+2021-10-01,2021 Q4,London,E12000007,603561,All dwellings
+2022-01-01,2022 Q1,London,E12000007,614482,All dwellings
+2022-04-01,2022 Q2,London,E12000007,620461,All dwellings
+2022-07-01,2022 Q3,London,E12000007,638125,All dwellings
+2022-10-01,2022 Q4,London,E12000007,581515,All dwellings
+2023-01-01,2023 Q1,London,E12000007,563436,All dwellings
+2023-04-01,2023 Q2,London,E12000007,590512,All dwellings
+2023-07-01,2023 Q3,London,E12000007,625583,All dwellings
+2023-10-01,2023 Q4,London,E12000007,581666,All dwellings
+2024-01-01,2024 Q1,London,E12000007,597184,All dwellings
+2024-04-01,2024 Q2,London,E12000007,610190,All dwellings
+2024-07-01,2024 Q3,London,E12000007,639394,All dwellings
+2024-10-01,2024 Q4,London,E12000007,601671,All dwellings
+2025-01-01,2025 Q1,London,E12000007,593389,All dwellings
+2025-04-01,2025 Q2,London,E12000007,616570,All dwellings
+2025-07-01,2025 Q3,London,E12000007,648436,All dwellings
+2025-10-01,2025 Q4,London,E12000007,614852,All dwellings
+2021-01-01,2021 Q1,North East,E12000001,200918,All dwellings
+2021-04-01,2021 Q2,North East,E12000001,203374,All dwellings
+2021-07-01,2021 Q3,North East,E12000001,182746,All dwellings
+2021-10-01,2021 Q4,North East,E12000001,181347,All dwellings
+2022-01-01,2022 Q1,North East,E12000001,187679,All dwellings
+2022-04-01,2022 Q2,North East,E12000001,194363,All dwellings
+2022-07-01,2022 Q3,North East,E12000001,204192,All dwellings
+2022-10-01,2022 Q4,North East,E12000001,203735,All dwellings
+2023-01-01,2023 Q1,North East,E12000001,195410,All dwellings
+2023-04-01,2023 Q2,North East,E12000001,199904,All dwellings
+2023-07-01,2023 Q3,North East,E12000001,205303,All dwellings
+2023-10-01,2023 Q4,North East,E12000001,201438,All dwellings
+2024-01-01,2024 Q1,North East,E12000001,202605,All dwellings
+2024-04-01,2024 Q2,North East,E12000001,200839,All dwellings
+2024-07-01,2024 Q3,North East,E12000001,207368,All dwellings
+2024-10-01,2024 Q4,North East,E12000001,208765,All dwellings
+2025-01-01,2025 Q1,North East,E12000001,213851,All dwellings
+2025-04-01,2025 Q2,North East,E12000001,204319,All dwellings
+2025-07-01,2025 Q3,North East,E12000001,208010,All dwellings
+2025-10-01,2025 Q4,North East,E12000001,219082,All dwellings
+2021-01-01,2021 Q1,North West,E12000002,252153,All dwellings
+2021-04-01,2021 Q2,North West,E12000002,250570,All dwellings
+2021-07-01,2021 Q3,North West,E12000002,221238,All dwellings
+2021-10-01,2021 Q4,North West,E12000002,224214,All dwellings
+2022-01-01,2022 Q1,North West,E12000002,237451,All dwellings
+2022-04-01,2022 Q2,North West,E12000002,245803,All dwellings
+2022-07-01,2022 Q3,North West,E12000002,255013,All dwellings
+2022-10-01,2022 Q4,North West,E12000002,254425,All dwellings
+2023-01-01,2023 Q1,North West,E12000002,244593,All dwellings
+2023-04-01,2023 Q2,North West,E12000002,247444,All dwellings
+2023-07-01,2023 Q3,North West,E12000002,252307,All dwellings
+2023-10-01,2023 Q4,North West,E12000002,249463,All dwellings
+2024-01-01,2024 Q1,North West,E12000002,240481,All dwellings
+2024-04-01,2024 Q2,North West,E12000002,250017,All dwellings
+2024-07-01,2024 Q3,North West,E12000002,258443,All dwellings
+2024-10-01,2024 Q4,North West,E12000002,262729,All dwellings
+2025-01-01,2025 Q1,North West,E12000002,269527,All dwellings
+2025-04-01,2025 Q2,North West,E12000002,246843,All dwellings
+2025-07-01,2025 Q3,North West,E12000002,266094,All dwellings
+2025-10-01,2025 Q4,North West,E12000002,272055,All dwellings
+2021-01-01,2021 Q1,Northern Ireland,N92000001,186240,All dwellings
+2021-04-01,2021 Q2,Northern Ireland,N92000001,191461,All dwellings
+2021-07-01,2021 Q3,Northern Ireland,N92000001,179935,All dwellings
+2021-10-01,2021 Q4,Northern Ireland,N92000001,171830,All dwellings
+2022-01-01,2022 Q1,Northern Ireland,N92000001,184707,All dwellings
+2022-04-01,2022 Q2,Northern Ireland,N92000001,190623,All dwellings
+2022-07-01,2022 Q3,Northern Ireland,N92000001,198015,All dwellings
+2022-10-01,2022 Q4,Northern Ireland,N92000001,192714,All dwellings
+2023-01-01,2023 Q1,Northern Ireland,N92000001,186838,All dwellings
+2023-04-01,2023 Q2,Northern Ireland,N92000001,192588,All dwellings
+2023-07-01,2023 Q3,Northern Ireland,N92000001,206338,All dwellings
+2023-10-01,2023 Q4,Northern Ireland,N92000001,198738,All dwellings
+2024-01-01,2024 Q1,Northern Ireland,N92000001,203073,All dwellings
+2024-04-01,2024 Q2,Northern Ireland,N92000001,203752,All dwellings
+2024-07-01,2024 Q3,Northern Ireland,N92000001,219500,All dwellings
+2024-10-01,2024 Q4,Northern Ireland,N92000001,221074,All dwellings
+2025-01-01,2025 Q1,Northern Ireland,N92000001,226744,All dwellings
+2025-04-01,2025 Q2,Northern Ireland,N92000001,215696,All dwellings
+2025-07-01,2025 Q3,Northern Ireland,N92000001,229633,All dwellings
+2025-10-01,2025 Q4,Northern Ireland,N92000001,236341,All dwellings
+2021-01-01,2021 Q1,Scotland,S92000003,222225,All dwellings
+2021-04-01,2021 Q2,Scotland,S92000003,207601,All dwellings
+2021-07-01,2021 Q3,Scotland,S92000003,220573,All dwellings
+2021-10-01,2021 Q4,Scotland,S92000003,222468,All dwellings
+2022-01-01,2022 Q1,Scotland,S92000003,223554,All dwellings
+2022-04-01,2022 Q2,Scotland,S92000003,226414,All dwellings
+2022-07-01,2022 Q3,Scotland,S92000003,233787,All dwellings
+2022-10-01,2022 Q4,Scotland,S92000003,236833,All dwellings
+2023-01-01,2023 Q1,Scotland,S92000003,226393,All dwellings
+2023-04-01,2023 Q2,Scotland,S92000003,230811,All dwellings
+2023-07-01,2023 Q3,Scotland,S92000003,231839,All dwellings
+2023-10-01,2023 Q4,Scotland,S92000003,229794,All dwellings
+2024-01-01,2024 Q1,Scotland,S92000003,225467,All dwellings
+2024-04-01,2024 Q2,Scotland,S92000003,230018,All dwellings
+2024-07-01,2024 Q3,Scotland,S92000003,235670,All dwellings
+2024-10-01,2024 Q4,Scotland,S92000003,237464,All dwellings
+2025-01-01,2025 Q1,Scotland,S92000003,234412,All dwellings
+2025-04-01,2025 Q2,Scotland,S92000003,236931,All dwellings
+2025-07-01,2025 Q3,Scotland,S92000003,244427,All dwellings
+2025-10-01,2025 Q4,Scotland,S92000003,244836,All dwellings
+2021-01-01,2021 Q1,South East,E12000008,442858,All dwellings
+2021-04-01,2021 Q2,South East,E12000008,433262,All dwellings
+2021-07-01,2021 Q3,South East,E12000008,404278,All dwellings
+2021-10-01,2021 Q4,South East,E12000008,421810,All dwellings
+2022-01-01,2022 Q1,South East,E12000008,439402,All dwellings
+2022-04-01,2022 Q2,South East,E12000008,450427,All dwellings
+2022-07-01,2022 Q3,South East,E12000008,468630,All dwellings
+2022-10-01,2022 Q4,South East,E12000008,449567,All dwellings
+2023-01-01,2023 Q1,South East,E12000008,426343,All dwellings
+2023-04-01,2023 Q2,South East,E12000008,434988,All dwellings
+2023-07-01,2023 Q3,South East,E12000008,444233,All dwellings
+2023-10-01,2023 Q4,South East,E12000008,423285,All dwellings
+2024-01-01,2024 Q1,South East,E12000008,416816,All dwellings
+2024-04-01,2024 Q2,South East,E12000008,426325,All dwellings
+2024-07-01,2024 Q3,South East,E12000008,445606,All dwellings
+2024-10-01,2024 Q4,South East,E12000008,434118,All dwellings
+2025-01-01,2025 Q1,South East,E12000008,439520,All dwellings
+2025-04-01,2025 Q2,South East,E12000008,423485,All dwellings
+2025-07-01,2025 Q3,South East,E12000008,450771,All dwellings
+2025-10-01,2025 Q4,South East,E12000008,438731,All dwellings
+2021-01-01,2021 Q1,South West,E12000009,343590,All dwellings
+2021-04-01,2021 Q2,South West,E12000009,336722,All dwellings
+2021-07-01,2021 Q3,South West,E12000009,304047,All dwellings
+2021-10-01,2021 Q4,South West,E12000009,317742,All dwellings
+2022-01-01,2022 Q1,South West,E12000009,334517,All dwellings
+2022-04-01,2022 Q2,South West,E12000009,338764,All dwellings
+2022-07-01,2022 Q3,South West,E12000009,360185,All dwellings
+2022-10-01,2022 Q4,South West,E12000009,352543,All dwellings
+2023-01-01,2023 Q1,South West,E12000009,336523,All dwellings
+2023-04-01,2023 Q2,South West,E12000009,336354,All dwellings
+2023-07-01,2023 Q3,South West,E12000009,347821,All dwellings
+2023-10-01,2023 Q4,South West,E12000009,332905,All dwellings
+2024-01-01,2024 Q1,South West,E12000009,325608,All dwellings
+2024-04-01,2024 Q2,South West,E12000009,332620,All dwellings
+2024-07-01,2024 Q3,South West,E12000009,344978,All dwellings
+2024-10-01,2024 Q4,South West,E12000009,338443,All dwellings
+2025-01-01,2025 Q1,South West,E12000009,348154,All dwellings
+2025-04-01,2025 Q2,South West,E12000009,320876,All dwellings
+2025-07-01,2025 Q3,South West,E12000009,346491,All dwellings
+2025-10-01,2025 Q4,South West,E12000009,345402,All dwellings
+2021-01-01,2021 Q1,United Kingdom,K02000001,345338,All dwellings
+2021-04-01,2021 Q2,United Kingdom,K02000001,342759,All dwellings
+2021-07-01,2021 Q3,United Kingdom,K02000001,295338,All dwellings
+2021-10-01,2021 Q4,United Kingdom,K02000001,310944,All dwellings
+2022-01-01,2022 Q1,United Kingdom,K02000001,329968,All dwellings
+2022-04-01,2022 Q2,United Kingdom,K02000001,335472,All dwellings
+2022-07-01,2022 Q3,United Kingdom,K02000001,353533,All dwellings
+2022-10-01,2022 Q4,United Kingdom,K02000001,342755,All dwellings
+2023-01-01,2023 Q1,United Kingdom,K02000001,327525,All dwellings
+2023-04-01,2023 Q2,United Kingdom,K02000001,326846,All dwellings
+2023-07-01,2023 Q3,United Kingdom,K02000001,341841,All dwellings
+2023-10-01,2023 Q4,United Kingdom,K02000001,325504,All dwellings
+2024-01-01,2024 Q1,United Kingdom,K02000001,322220,All dwellings
+2024-04-01,2024 Q2,United Kingdom,K02000001,327235,All dwellings
+2024-07-01,2024 Q3,United Kingdom,K02000001,343711,All dwellings
+2024-10-01,2024 Q4,United Kingdom,K02000001,337696,All dwellings
+2025-01-01,2025 Q1,United Kingdom,K02000001,352238,All dwellings
+2025-04-01,2025 Q2,United Kingdom,K02000001,315162,All dwellings
+2025-07-01,2025 Q3,United Kingdom,K02000001,344669,All dwellings
+2025-10-01,2025 Q4,United Kingdom,K02000001,342102,All dwellings
+2021-01-01,2021 Q1,Wales,W92000004,227117,All dwellings
+2021-04-01,2021 Q2,Wales,W92000004,227234,All dwellings
+2021-07-01,2021 Q3,Wales,W92000004,216872,All dwellings
+2021-10-01,2021 Q4,Wales,W92000004,229080,All dwellings
+2022-01-01,2022 Q1,Wales,W92000004,230451,All dwellings
+2022-04-01,2022 Q2,Wales,W92000004,242023,All dwellings
+2022-07-01,2022 Q3,Wales,W92000004,248531,All dwellings
+2022-10-01,2022 Q4,Wales,W92000004,244268,All dwellings
+2023-01-01,2023 Q1,Wales,W92000004,236508,All dwellings
+2023-04-01,2023 Q2,Wales,W92000004,234954,All dwellings
+2023-07-01,2023 Q3,Wales,W92000004,235209,All dwellings
+2023-10-01,2023 Q4,Wales,W92000004,235814,All dwellings
+2024-01-01,2024 Q1,Wales,W92000004,225891,All dwellings
+2024-04-01,2024 Q2,Wales,W92000004,236955,All dwellings
+2024-07-01,2024 Q3,Wales,W92000004,243192,All dwellings
+2024-10-01,2024 Q4,Wales,W92000004,242873,All dwellings
+2025-01-01,2025 Q1,Wales,W92000004,243289,All dwellings
+2025-04-01,2025 Q2,Wales,W92000004,245554,All dwellings
+2025-07-01,2025 Q3,Wales,W92000004,250885,All dwellings
+2025-10-01,2025 Q4,Wales,W92000004,253742,All dwellings
+2021-01-01,2021 Q1,West Midlands,E12000005,284719,All dwellings
+2021-04-01,2021 Q2,West Midlands,E12000005,277484,All dwellings
+2021-07-01,2021 Q3,West Midlands,E12000005,245020,All dwellings
+2021-10-01,2021 Q4,West Midlands,E12000005,257263,All dwellings
+2022-01-01,2022 Q1,West Midlands,E12000005,264200,All dwellings
+2022-04-01,2022 Q2,West Midlands,E12000005,273219,All dwellings
+2022-07-01,2022 Q3,West Midlands,E12000005,286347,All dwellings
+2022-10-01,2022 Q4,West Midlands,E12000005,285160,All dwellings
+2023-01-01,2023 Q1,West Midlands,E12000005,271599,All dwellings
+2023-04-01,2023 Q2,West Midlands,E12000005,278026,All dwellings
+2023-07-01,2023 Q3,West Midlands,E12000005,280624,All dwellings
+2023-10-01,2023 Q4,West Midlands,E12000005,274699,All dwellings
+2024-01-01,2024 Q1,West Midlands,E12000005,267747,All dwellings
+2024-04-01,2024 Q2,West Midlands,E12000005,278010,All dwellings
+2024-07-01,2024 Q3,West Midlands,E12000005,284833,All dwellings
+2024-10-01,2024 Q4,West Midlands,E12000005,289038,All dwellings
+2025-01-01,2025 Q1,West Midlands,E12000005,295214,All dwellings
+2025-04-01,2025 Q2,West Midlands,E12000005,276070,All dwellings
+2025-07-01,2025 Q3,West Midlands,E12000005,290925,All dwellings
+2025-10-01,2025 Q4,West Midlands,E12000005,299351,All dwellings
+2021-01-01,2021 Q1,Yorkshire and the Humber,E12000003,244421,All dwellings
+2021-04-01,2021 Q2,Yorkshire and the Humber,E12000003,239878,All dwellings
+2021-07-01,2021 Q3,Yorkshire and the Humber,E12000003,211666,All dwellings
+2021-10-01,2021 Q4,Yorkshire and the Humber,E12000003,217506,All dwellings
+2022-01-01,2022 Q1,Yorkshire and the Humber,E12000003,227511,All dwellings
+2022-04-01,2022 Q2,Yorkshire and the Humber,E12000003,232200,All dwellings
+2022-07-01,2022 Q3,Yorkshire and the Humber,E12000003,244449,All dwellings
+2022-10-01,2022 Q4,Yorkshire and the Humber,E12000003,244235,All dwellings
+2023-01-01,2023 Q1,Yorkshire and the Humber,E12000003,227970,All dwellings
+2023-04-01,2023 Q2,Yorkshire and the Humber,E12000003,235067,All dwellings
+2023-07-01,2023 Q3,Yorkshire and the Humber,E12000003,246285,All dwellings
+2023-10-01,2023 Q4,Yorkshire and the Humber,E12000003,238984,All dwellings
+2024-01-01,2024 Q1,Yorkshire and the Humber,E12000003,227990,All dwellings
+2024-04-01,2024 Q2,Yorkshire and the Humber,E12000003,236606,All dwellings
+2024-07-01,2024 Q3,Yorkshire and the Humber,E12000003,248148,All dwellings
+2024-10-01,2024 Q4,Yorkshire and the Humber,E12000003,249164,All dwellings
+2025-01-01,2025 Q1,Yorkshire and the Humber,E12000003,253554,All dwellings
+2025-04-01,2025 Q2,Yorkshire and the Humber,E12000003,234546,All dwellings
+2025-07-01,2025 Q3,Yorkshire and the Humber,E12000003,248752,All dwellings
+2025-10-01,2025 Q4,Yorkshire and the Humber,E12000003,257583,All dwellings
