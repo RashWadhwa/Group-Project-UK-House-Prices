@@ -4,3 +4,4 @@
 
 ![alt text](images/passedAllTests.png)
 
+![alt text](images/amendedTestResult.png)
