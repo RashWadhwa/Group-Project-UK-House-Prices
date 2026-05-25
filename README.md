@@ -55,6 +55,12 @@ Primary workflow (recommended for deployment and GitHub use):
 python project.py data/five_year_dataset.csv
 ```
 
+To generate the forecast plot for a specific region, pass `--region`:
+
+```bash
+python project.py data/five_year_dataset.csv --region "West Midlands"
+```
+
 Optional notebook workflow:
 
 - `docs/training_and_plotting.ipynb` now calls the same pipeline function from `project.py`.

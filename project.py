@@ -1,4 +1,5 @@
 import sys
+import argparse
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -252,8 +253,12 @@ def export_plots(
     y_test: pd.Series,
     y_pred: np.ndarray,
     reports_dir: Path,
+    sample_region: str | None = None,
 ) -> None:
     """Save the main evaluation plots used by the notebook and report."""
+    import matplotlib
+
+    matplotlib.use('Agg')
     import matplotlib.pyplot as plt
     import seaborn as sns
 
@@ -270,15 +275,19 @@ def export_plots(
     plt.savefig(reports_dir / 'actual_vs_predicted.png', dpi=150)
     plt.close()
 
-    sample_region = history['Region'].dropna().unique()[0]
-    hist = history.loc[history['Region'] == sample_region].sort_values('Period_dt')
-    fcast = forecast.loc[forecast['Region'] == sample_region].sort_values('Period_dt')
+    available_regions = history['Region'].dropna().unique().tolist()
+    if sample_region and sample_region in available_regions:
+        region_name = sample_region
+    else:
+        region_name = available_regions[0]
+    hist = history.loc[history['Region'] == region_name].sort_values('Period_dt')
+    fcast = forecast.loc[forecast['Region'] == region_name].sort_values('Period_dt')
 
     plt.figure(figsize=(10, 5))
     plt.plot(hist['Period_dt'], hist['Price'], label='History')
     plt.plot(fcast['Period_dt'], fcast['yhat'], label='Forecast', linestyle='--')
     plt.scatter(fcast['Period_dt'], fcast['yhat'])
-    plt.title(f'History + 12-quarter forecast - {sample_region}')
+    plt.title(f'History + 12-quarter forecast - {region_name}')
     plt.xlabel('Period')
     plt.ylabel('Price')
     plt.legend()
@@ -307,6 +316,7 @@ def run_pipeline(
     input_path: str,
     output_dir: str | Path = 'outputs',
     reports_dir: str | Path = 'reports',
+    sample_region: str | None = None,
 ) -> dict:
     """Run the full training and forecasting pipeline and write outputs."""
     cfg = TrainConfig()
@@ -335,7 +345,7 @@ def run_pipeline(
     feats.to_csv(output_dir / 'features_all_dwellings.csv', index=False)
     fc.to_csv(output_dir / 'forecast_all_dwellings_12q.csv', index=False)
 
-    export_plots(metrics, all_dw, fc, model, x_test, y_test, y_pred, reports_dir)
+    export_plots(metrics, all_dw, fc, model, x_test, y_test, y_pred, reports_dir, sample_region=sample_region)
 
     return {
         'config': cfg,
@@ -350,14 +360,16 @@ def run_pipeline(
         'y_pred': y_pred,
         'output_dir': output_dir,
         'reports_dir': reports_dir,
+        'sample_region': sample_region,
     }
 
 def main():
-    if len(sys.argv) < 2:
-        raise SystemExit("Usage: python project.py five_year_dataset.csv")
+    parser = argparse.ArgumentParser(description='Run the UK house-price forecasting pipeline.')
+    parser.add_argument('input_path', help='Path to the source CSV file')
+    parser.add_argument('--region', dest='sample_region', default=None, help='Optional region to use for the forecast plot')
+    args = parser.parse_args()
 
-    input_path = sys.argv[1]
-    results = run_pipeline(input_path)
+    results = run_pipeline(args.input_path, sample_region=args.sample_region)
 
     # Print a clean console summary
     print("Model evaluation (time holdout):")
@@ -371,6 +383,8 @@ def main():
     print(f"\nForecast written to {results['output_dir'] / 'forecast_all_dwellings_12q.csv'}")
     print(f"Forecast horizon: {results['config'].horizon_quarters} quarters (next 3 years) from last observed quarter.")
     print(f"Note: earliest region last-observed date (sanity check) = {last_hist.date()}")
+    if results['sample_region']:
+        print(f"Plot region requested: {results['sample_region']}")
 
 
 if __name__ == "__main__":
