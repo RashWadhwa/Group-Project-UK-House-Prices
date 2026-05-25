@@ -3,6 +3,10 @@ numpy
 scikit-learn
 pytest
 ipykernel
+matplotlib
+seaborn
+jupyter
+nbconvert
 pathlib
 dataclasses
 

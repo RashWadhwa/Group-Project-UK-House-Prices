@@ -9,11 +9,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.ensemble import HistGradientBoostingRegressor
-
+from sklearn.inspection import permutation_importance
 
 SEGMENT_ALL_DWELLINGS = "All dwellings"
-
-
 @dataclass(frozen=True)
 class TrainConfig:
     horizon_quarters: int = 12  # 3 years
@@ -59,7 +57,6 @@ def load_dataset(path: str) -> pd.DataFrame:
 
     return df
 
-
 def filter_all_dwellings(df: pd.DataFrame) -> pd.DataFrame:
     """
     Return a clean history table for All dwellings only.
@@ -78,7 +75,6 @@ def filter_all_dwellings(df: pd.DataFrame) -> pd.DataFrame:
     out = out.sort_values(["Region", "Period_dt"]).reset_index(drop=True)
     out = out.dropna(subset=["Price"]).reset_index(drop=True)
     return out
-
 
 def add_time_features(history: pd.DataFrame) -> pd.DataFrame:
     """
@@ -109,7 +105,6 @@ def add_time_features(history: pd.DataFrame) -> pd.DataFrame:
     df["quarter"] = df["Period_dt"].dt.quarter.astype(int)
 
     return df
-
 
 def train_model(features: pd.DataFrame, cfg: TrainConfig) -> tuple[Pipeline, dict]:
     """
@@ -169,7 +164,6 @@ def train_model(features: pd.DataFrame, cfg: TrainConfig) -> tuple[Pipeline, dic
     }
 
     return pipe, metrics
-
 
 def forecast_next_quarters(
     model: Pipeline,
@@ -249,12 +243,72 @@ def forecast_next_quarters(
 
     return pd.DataFrame(forecasts)
 
+def export_plots(
+    metrics: dict,
+    history: pd.DataFrame,
+    forecast: pd.DataFrame,
+    model: Pipeline,
+    x_test: pd.DataFrame,
+    y_test: pd.Series,
+    y_pred: np.ndarray,
+    reports_dir: Path,
+) -> None:
+    """Save the main evaluation plots used by the notebook and report."""
+    import matplotlib.pyplot as plt
+    import seaborn as sns
 
-def main():
-    if len(sys.argv) < 2:
-        raise SystemExit("Usage: python project.py five_year_dataset.csv")
+    reports_dir.mkdir(parents=True, exist_ok=True)
 
-    input_path = sys.argv[1]
+    plt.figure(figsize=(8, 6))
+    sns.scatterplot(x=y_test, y=y_pred, alpha=0.7)
+    lims = [min(y_test.min(), y_pred.min()), max(y_test.max(), y_pred.max())]
+    plt.plot(lims, lims, '--', color='gray')
+    plt.xlabel('Actual Price')
+    plt.ylabel('Predicted Price')
+    plt.title('Actual vs Predicted (time-holdout test set)')
+    plt.tight_layout()
+    plt.savefig(reports_dir / 'actual_vs_predicted.png', dpi=150)
+    plt.close()
+
+    sample_region = history['Region'].dropna().unique()[0]
+    hist = history.loc[history['Region'] == sample_region].sort_values('Period_dt')
+    fcast = forecast.loc[forecast['Region'] == sample_region].sort_values('Period_dt')
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(hist['Period_dt'], hist['Price'], label='History')
+    plt.plot(fcast['Period_dt'], fcast['yhat'], label='Forecast', linestyle='--')
+    plt.scatter(fcast['Period_dt'], fcast['yhat'])
+    plt.title(f'History + 12-quarter forecast - {sample_region}')
+    plt.xlabel('Period')
+    plt.ylabel('Price')
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(reports_dir / 'history_and_forecast.png', dpi=150)
+    plt.close()
+
+    importance = permutation_importance(
+        model,
+        x_test,
+        y_test,
+        n_repeats=5,
+        random_state=0,
+        scoring='neg_mean_absolute_error',
+    )
+    importance_df = pd.Series(importance.importances_mean, index=x_test.columns).sort_values(ascending=False)
+
+    plt.figure(figsize=(8, 4))
+    importance_df.plot(kind='bar')
+    plt.title('Permutation importances')
+    plt.tight_layout()
+    plt.savefig(reports_dir / 'feature_importances.png', dpi=150)
+    plt.close()
+
+def run_pipeline(
+    input_path: str,
+    output_dir: str | Path = 'outputs',
+    reports_dir: str | Path = 'reports',
+) -> dict:
+    """Run the full training and forecasting pipeline and write outputs."""
     cfg = TrainConfig()
 
     raw = load_dataset(input_path)
@@ -263,28 +317,59 @@ def main():
 
     model, metrics = train_model(feats, cfg)
 
-    # Forecast from last observed quarter for 12 quarters (3 years)
+    model_feature_cols = ['lag_1', 'lag_2', 'lag_4', 'roll_mean_4', 'yoy_growth', 'quarter', 'Region']
+    train_frame = feats.dropna(subset=['Price', 'lag_1', 'lag_2', 'lag_4', 'roll_mean_4', 'yoy_growth']).copy()
+    train_frame['rank_desc'] = train_frame.groupby('Region')['Period_dt'].rank(method='first', ascending=False)
+    test_frame = train_frame.loc[train_frame['rank_desc'] <= cfg.test_quarters].copy()
+    x_test = test_frame[model_feature_cols]
+    y_test = test_frame['Price']
+    y_pred = model.predict(x_test)
+
     fc = forecast_next_quarters(model, feats, n_quarters=cfg.horizon_quarters)
 
-    # Outputs for Power BI / portfolio
-    outdir = Path("outputs")
-    outdir.mkdir(parents=True, exist_ok=True)
+    output_dir = Path(output_dir)
+    reports_dir = Path(reports_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
 
-    all_dw.to_csv(outdir / "clean_prices_all_dwellings.csv", index=False)
-    feats.to_csv(outdir / "features_all_dwellings.csv", index=False)
-    fc.to_csv(outdir / "forecast_all_dwellings_12q.csv", index=False)
+    all_dw.to_csv(output_dir / 'clean_prices_all_dwellings.csv', index=False)
+    feats.to_csv(output_dir / 'features_all_dwellings.csv', index=False)
+    fc.to_csv(output_dir / 'forecast_all_dwellings_12q.csv', index=False)
+
+    export_plots(metrics, all_dw, fc, model, x_test, y_test, y_pred, reports_dir)
+
+    return {
+        'config': cfg,
+        'raw': raw,
+        'all_dw': all_dw,
+        'feats': feats,
+        'model': model,
+        'metrics': metrics,
+        'forecast': fc,
+        'x_test': x_test,
+        'y_test': y_test,
+        'y_pred': y_pred,
+        'output_dir': output_dir,
+        'reports_dir': reports_dir,
+    }
+
+def main():
+    if len(sys.argv) < 2:
+        raise SystemExit("Usage: python project.py five_year_dataset.csv")
+
+    input_path = sys.argv[1]
+    results = run_pipeline(input_path)
 
     # Print a clean console summary
     print("Model evaluation (time holdout):")
-    for k, v in metrics.items():
+    for k, v in results['metrics'].items():
         if isinstance(v, float):
             print(f"  {k}: {v:.6f}")
         else:
             print(f"  {k}: {v}")
 
-    last_hist = all_dw.groupby("Region")["Period_dt"].max().min()
-    print(f"\nForecast written to outputs/forecast_all_dwellings_12q.csv")
-    print(f"Forecast horizon: {cfg.horizon_quarters} quarters (next 3 years) from last observed quarter.")
+    last_hist = results['all_dw'].groupby("Region")["Period_dt"].max().min()
+    print(f"\nForecast written to {results['output_dir'] / 'forecast_all_dwellings_12q.csv'}")
+    print(f"Forecast horizon: {results['config'].horizon_quarters} quarters (next 3 years) from last observed quarter.")
     print(f"Note: earliest region last-observed date (sanity check) = {last_hist.date()}")
 
 
