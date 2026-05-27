@@ -1,9 +1,11 @@
 
-# Group-Project-UK-House-Prices
+# Project Title: Group-Project-UK-House-Prices
 
-## Overview
+[Link to video demo](https://youtu.be/5KL7jm73nkI)
 
-This project builds a simple UK house-price forecasting pipeline from an ONS-style CSV:
+## Project Description:
+
+This project builds a UK house-price forecasting pipeline using the latest 5-year dataset from the Office for National Statistics (ONS).
 
 - cleans and standardizes the source data,
 - engineers time-series features by region,
