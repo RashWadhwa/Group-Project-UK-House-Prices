@@ -1,7 +1,7 @@
 
 # Project Title: Group-Project-UK-House-Prices
 
-[Link to video demo](https://youtu.be/5KL7jm73nkI)
+[Link to video demo](https://www.youtube.com/watch?v=5KL7jm73nkI)
 
 ## Project Description:
 
