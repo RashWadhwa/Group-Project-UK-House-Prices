@@ -59,11 +59,3 @@ Lags — definition and purpose
 - Implementation note: compute lags per-region using `groupby('Region').shift(k)` (as in `add_time_features`) to avoid mixing series across regions.
 
 
-Notes
------
-- The explanations above assume a recent scikit-learn release (1.x). If you run into API differences, let me know the sklearn version in your environment and I'll adapt the notes.
-- If you'd like, I can produce a short Jupyter notebook that demonstrates training the pipeline, plotting feature importances, and visualising forecasts versus history.
-
------
-File: `docs/sklearn_reference.md`
-# then run (requires a TeX engine such as TeX Live or TinyTeX):

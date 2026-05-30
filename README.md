@@ -3,6 +3,14 @@
 
 [Link to video demo](https://www.youtube.com/watch?v=5KL7jm73nkI)
 
+Group Members
+---
+| Name | Student ID |
+| --- | --- |
+| RP Wadhwa | 25208400 |
+| Navdeep Kaur | 25343800 |
+| Ben Smith | 25295700 |
+
 ## Project Description:
 
 This project builds a UK house-price forecasting pipeline using the latest 5-year dataset from the Office for National Statistics (ONS).
@@ -40,6 +48,10 @@ Source dataset (ONS):
 Project note:
 
 - The CSV file `data/five_year_dataset.csv` was created by extracting the latest 5 years of data from the ONS housing datasets link above, and this extracted file is the one used throughout this project.
+
+Project Structure
+
+![](images\projectStructure.png)
 
 Expected key columns include:
 
