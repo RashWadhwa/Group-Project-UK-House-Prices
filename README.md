@@ -51,7 +51,32 @@ Project note:
 
 Project Structure
 
-![](images\projectStructure.png)
+```text
+Group-Project-UK-House-Prices/
+├── __init__.py
+├── LICENSE
+├── project.py
+├── README.md
+├── requirements.txt
+├── test_project.py
+├── data/
+│   └── five_year_dataset.csv
+├── docs/
+│   ├── document.md
+│   ├── sklearn_reference.md
+│   ├── training_and_plotting.ipynb
+│   └── reports/
+├── images/
+│   ├── amendedTestResult.png
+│   ├── firstTestOutput.png
+│   ├── modalEvaluation.png
+│   ├── passedAllTests.png
+│   └── projectStructure.png
+└── outputs/
+	├── clean_prices_all_dwellings.csv
+	├── features_all_dwellings.csv
+	└── forecast_all_dwellings_12q.csv
+```
 
 Expected key columns include:
 
@@ -92,8 +117,16 @@ After running, the pipeline writes:
 And report images to:
 
 - `docs/reports/actual_vs_predicted.png`
+  
+![](docs\reports\actual_vs_predicted.png)
+
 - `docs/reports/history_and_forecast.png`
+  
+![](docs\reports\history_and_forecast.png) 
+
 - `docs/reports/feature_importances.png`
+  
+![](docs\reports\feature_importances.png)
 
 ## Model Summary
 
