@@ -22,12 +22,12 @@ This project builds a UK house-price forecasting pipeline using the latest 5-yea
 - forecasts the next 12 quarters (3 years),
 - exports CSV outputs and report images.
 
-The single source of truth is `project.py`.
+The single source of truth is project.py.
 
 ## Requirements
 
 - Python 3.9+
-- packages listed in `requirements.txt`
+- packages listed in requirements.txt
 
 Install dependencies:
 
@@ -39,7 +39,7 @@ python -m pip install -r requirements.txt
 
 Development dataset:
 
-- `data/five_year_dataset.csv`
+- data/five_year_dataset.csv
 
 Source dataset (ONS):
 
@@ -47,7 +47,7 @@ Source dataset (ONS):
 
 Project note:
 
-- The CSV file `data/five_year_dataset.csv` was created by extracting the latest 5 years of data from the ONS housing datasets link above, and this extracted file is the one used throughout this project.
+- The CSV file data/five_year_dataset.csv was created by extracting the latest 5 years of data from the ONS housing datasets link above, and this extracted file is the one used throughout this project.
 
 Project Structure
 
@@ -80,11 +80,11 @@ Group-Project-UK-House-Prices/
 
 Expected key columns include:
 
-- `Period_dt`
-- `Period`
-- `Region`
-- `Region code`
-- `All dwellings Price`
+- Period_dt
+- Period
+- Region
+- Region code
+- All dwellings Price
 
 ## How To Run
 
@@ -94,7 +94,7 @@ Primary workflow (recommended for deployment and GitHub use):
 python project.py data/five_year_dataset.csv
 ```
 
-To generate the forecast plot for a specific region, pass `--region`:
+To generate the forecast plot for a specific region, pass --region:
 
 ```bash
 python project.py data/five_year_dataset.csv --region "West Midlands"
@@ -102,7 +102,7 @@ python project.py data/five_year_dataset.csv --region "West Midlands"
 
 Optional notebook workflow:
 
-- `docs/training_and_plotting.ipynb` now calls the same pipeline function from `project.py`.
+- docs/training_and_plotting.ipynb now calls the same pipeline function from project.py
 - Use the notebook only if you want interactive preview tables/metrics.
 - You do not need to run both script and notebook.
 
@@ -110,43 +110,43 @@ Optional notebook workflow:
 
 After running, the pipeline writes:
 
-- cleaned history: `outputs/clean_prices_all_dwellings.csv`
-- engineered features: `outputs/features_all_dwellings.csv`
-- 12-quarter forecast: `outputs/forecast_all_dwellings_12q.csv`
+- cleaned history: outputs/clean_prices_all_dwellings.csv
+- engineered features: outputs/features_all_dwellings.csv
+- 12-quarter forecast: outputs/forecast_all_dwellings_12q.csv
 
 And report images to:
 
-- `docs/reports/actual_vs_predicted.png`
+- docs/reports/actual_vs_predicted.png
   
-![](docs\reports\actual_vs_predicted.png)
+![](docs/reports/actual_vs_predicted.png)
 
-- `docs/reports/history_and_forecast.png`
+- docs/reports/history_and_forecast.png
   
-![](docs\reports\history_and_forecast.png) 
+![](docs/reports/history_and_forecast.png) 
 
-- `docs/reports/feature_importances.png`
+- docs/reports/feature_importances.png
   
-![](docs\reports\feature_importances.png)
+![](docs/reports/feature_importances.png)
 
 ## Model Summary
 
 Features used for training:
 
-- `lag_1`, `lag_2`, `lag_4`
-- `roll_mean_4`
-- `yoy_growth`
-- `quarter`
-- `Region` (one-hot encoded)
+- lag_1, lag_2, lag_4
+- roll_mean_4
+- yoy_growth
+- quarter
+- Region (one-hot encoded)
 
 Model:
 
-- `HistGradientBoostingRegressor`
-- wrapped in an `sklearn` `Pipeline` with `ColumnTransformer` and `OneHotEncoder(handle_unknown="ignore")`
+- HistGradientBoostingRegressor
+- wrapped in an sklearn Pipeline with ColumnTransformer and OneHotEncoder(handle_unknown="ignore").
 
 Validation:
 
 - time-based holdout per region using the last 4 quarters as test data
-- reports `mae`, `rmse`, `mape`, plus naive baseline metrics
+- reports mae, rmse, mape, plus naive baseline metrics
 
 ## Tests
 
@@ -160,6 +160,6 @@ Unit tests are defined in `test_project.py`.
 
 ## Repository Notes
 
-- keep one reports folder only: `docs/reports/`
-- `project.py` is the production entrypoint
+- keep one reports folder only: docs/reports/
+- project.py is the production entrypoint
 - notebook is optional and mirrors the same pipeline
