@@ -7,20 +7,20 @@ This document explains the main libraries and sklearn components used in this pr
 
 Data source
 -----------
-The input data for this project is an Office for National Statistics (ONS) style extract. For convenience, the repository includes the latest five years of regional house-price data used for development: data/five_year_dataset.csv. The CSV contains expected ONS-style columns such as `Period_dt`, `Period`, `Region`, `Region code`, and `All dwellings Price`. The pipeline normalises common ONS markers (for example, [x]) to NaN and parses dates with dayfirst=True.
+The input data for this project is an Office for National Statistics (ONS) style extract. For convenience, the repository includes the latest five years of regional house-price data used for development: data/five_year_dataset.csv. The CSV contains expected ONS-style columns such as Period_dt, Period, Region, Region code, and All dwellings Price. The pipeline normalises common ONS markers (for example, [x]) to NaN and parses dates with dayfirst=True.
 
 Key libraries used
 ------------------
 - pandas — data loading and tabular manipulation. Used to read CSVs, parse Period_dt, and build the tidy tables written to outputs/.
 - numpy — numeric arrays and simple numerical utilities (NaN handling, means, basic arithmetic).
-- scikit-learn (sklearn) — modelling and preprocessing building blocks used in `project.py`:
-  - sklearn.compose.ColumnTransformer — applies different preprocessing to subsets of columns (here: one-hot encoding of the `Region` column, while passing numeric features through unchanged). Keeps preprocessing logic tidy and compatible with `Pipeline`.
-  - sklearn.pipeline.Pipeline — chains preprocessing + estimator. Ensures the same transforms are applied at training and prediction time and provides a single `.fit()`/.predict()` interface.
-  - sklearn.preprocessing.OneHotEncoder — converts categorical `Region` values into binary indicator columns. The project uses `handle_unknown="ignore"` so the pipeline can safely predict on regions not seen during training.
-  - sklearn.metrics.mean_absolute_error and `sklearn.metrics.mean_squared_error` — compute MAE and MSE; RMSE is computed as sqrt(MSE). These are standard, interpretable regression metrics used for model evaluation and baseline comparison.
+- scikit-learn (sklearn) — modelling and preprocessing building blocks used in project.py:
+  - sklearn.compose.ColumnTransformer — applies different preprocessing to subsets of columns (here: one-hot encoding of the Region column, while passing numeric features through unchanged). Keeps preprocessing logic tidy and compatible with Pipeline.
+  - sklearn.pipeline.Pipeline — chains preprocessing + estimator. Ensures the same transforms are applied at training and prediction time and provides a single .fit()/.predict() interface.
+  - sklearn.preprocessing.OneHotEncoder — converts categorical Region values into binary indicator columns. The project uses handle_unknown="ignore" so the pipeline can safely predict on regions not seen during training.
+  - sklearn.metrics.mean_absolute_error and sklearn.metrics.mean_squared_error — compute MAE and MSE; RMSE is computed as sqrt(MSE). These are standard, interpretable regression metrics used for model evaluation and baseline comparison.
   - sklearn.ensemble.HistGradientBoostingRegressor — the chosen estimator. See the section below for motivation.
 
-Why `HistGradientBoostingRegressor` (HGBR)?
+Why HistGradientBoostingRegressor (HGBR)?
 ------------------------------------------
 Short answer: strong, efficient default for tabular regression tasks with heterogeneous features.
 
